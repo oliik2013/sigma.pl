@@ -5,11 +5,54 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "vscode-edge-devtools.debug",
+            "type": "pwa-msedge",
+            "name": "Launch Microsoft Edge",
             "request": "launch",
-            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
             "url": "https://oliik2013.github.io/sigma.pl/",
-            "webRoot": "${workspaceFolder}"
+            "presentation": {
+                "hidden": true
+            }
         },
+        {
+            "type": "pwa-msedge",
+            "name": "Launch Microsoft Edge in headless mode",
+            "request": "launch",
+            "runtimeArgs": [
+                "--headless",
+                "--remote-debugging-port=9222"
+            ],
+            "url": "https://oliik2013.github.io/sigma.pl/",
+            "presentation": {
+                "hidden": true
+            }
+        },
+        {
+            "type": "vscode-edge-devtools.debug",
+            "name": "Open Edge DevTools",
+            "request": "attach",
+            "url": "https://oliik2013.github.io/sigma.pl/",
+            "presentation": {
+                "hidden": true
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Edge Headless and attach DevTools",
+            "configurations": [
+                "Launch Microsoft Edge in headless mode",
+                "Open Edge DevTools"
+            ]
+        },
+        {
+            "name": "Launch Edge and attach DevTools",
+            "configurations": [
+                "Launch Microsoft Edge",
+                "Open Edge DevTools"
+            ]
+        }
     ]
 }
