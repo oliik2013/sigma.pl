@@ -16,12 +16,31 @@
                 "hidden": true
             }
         },
+        {
+            "type": "msedge",
+            "name": "Launch Microsoft Edge with Dev Tools",
+            "request": "launch",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+                "--auto-open-devtools-for-tabs"
+            ],
+            "url": "https://oliik2013.github.io/sigma.pl/",
+            "presentation": {
+                "hidden": true
+            }
+        },
     ],
     "compounds": [
         {
             "name": "Launch Edge",
             "configurations": [
                 "Launch Microsoft Edge",
+            ]
+        }
+        {
+            "name": "Launch Edge with Dev Tools",
+            "configurations": [
+                "Launch Microsoft Edge with Dev Tools",
             ]
         }
     ]
