@@ -1,0 +1,72 @@
+/* Importing Google Font: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* White headings */
+    margin: 0.5em 0;
+}
+
+p {
+    color: #B0B0B0; /* Slightly darker text color for paragraphs */
+    line-height: 1.6;
+}
+
+a {
+    color: #1E90FF; /* DodgerBlue links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #63A4FF; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+button {
+    background-color: #1E1E1E; /* Dark button background */
+    color: #FFFFFF; /* White button text */
+    border: 1px solid #333333; /* Border color */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #333333; /* Slightly lighter background on hover */
+}
+
+input, textarea {
+    background-color: #1E1E1E; /* Dark input background */
+    color: #E0E0E0; /* Light text color */
+    border: 1px solid #333333; /* Border color */
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, footer {
+    background-color: #1F1F1F; /* Darker background for header and footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1C1C1C; /* Card background */
+    color: #E0E0E0; /* Card text color */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
