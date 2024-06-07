@@ -16,27 +16,8 @@
                 "hidden": true
             }
         },
-        {
-            "type": "msedge",
-            "name": "Launch Microsoft Edge in headless mode",
-            "request": "launch",
-            "runtimeArgs": [
-                "--headless",
-                "--remote-debugging-port=9222"
-            ],
-            "url": "https://oliik2013.github.io/sigma.pl/",
-            "presentation": {
-                "hidden": true
-            }
-        },
     ],
     "compounds": [
-        {
-            "name": "Launch Edge Headless",
-            "configurations": [
-                "Launch Microsoft Edge in headless mode",
-            ]
-        },
         {
             "name": "Launch Edge",
             "configurations": [
