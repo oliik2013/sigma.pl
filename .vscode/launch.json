@@ -5,16 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
-            "name": "Launch Microsoft Edge",
+            "type": "vscode-edge-devtools.debug",
             "request": "launch",
-            "runtimeArgs": [
-                "--remote-debugging-port=9222"
-            ],
-            "url": "https://oliik2013.github.io/sigma.pl/",
-            "presentation": {
-                "hidden": true
-            }
-        }
+            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "url": "https://oliik2013.github.io/sigma.pl/0",
+            "webRoot": "${workspaceFolder}"
+        },
     ]
 }
