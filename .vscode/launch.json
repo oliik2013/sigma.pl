@@ -8,7 +8,7 @@
             "type": "vscode-edge-devtools.debug",
             "request": "launch",
             "name": "Launch Microsoft Edge and open the Edge DevTools",
-            "url": "https://oliik2013.github.io/sigma.pl/0",
+            "url": "https://oliik2013.github.io/sigma.pl/index.html",
             "webRoot": "${workspaceFolder}"
         },
     ]
