@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "name": "Launch Microsoft Edge",
             "request": "launch",
             "runtimeArgs": [
@@ -29,15 +29,6 @@
                 "hidden": true
             }
         },
-        {
-            "type": "vscode-edge-devtools.debug",
-            "name": "Open Edge DevTools",
-            "request": "attach",
-            "url": "https://oliik2013.github.io/sigma.pl/",
-            "presentation": {
-                "hidden": true
-            }
-        }
     ],
     "compounds": [
         {
